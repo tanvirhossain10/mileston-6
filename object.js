@@ -7,6 +7,7 @@
 /* ৩.৪ একাধিক লাইন ওয়ালা অ্যারো ফাংশন লিখো। সেটাতে দুইটা প্যারামিটার নিবে। ওই arrow ফাংশনটা হবে অনেকগুলা লাইনের। সেখানে প্রত্যেকটা ইনপুট প্যারামিটার এর সাথে ৭ যোগ করবে তারপর যোগফল দুইটাকে আবার যোগ করবে। ক্যামনে করবে সেটা চিন্তা করে বের করার চেষ্টা করো। */
 /*  অনেকগুলা সংখ্যার একটা array হবে। তারপর তোমার কাজ হবে array এর উপরে map ইউজ করে। প্রত্যেকটা উপাদানকে ৭ দিয়ে ভাগ করে ভাগফল আরেকটা array হিসেবে রাখবে। পুরা কাজটা এক লাইনে হবে। 
  */
+/* ৬. সিম্পল একটা জাভাস্ক্রিপ্ট অবজেক্ট এর কোন একটা প্রোপার্টিকে ভেরিয়েবল হিসেবে ডিক্লেয়ার করার জন্য destructuring ইউজ করো। array এর destructuring করবে আর সেটা করার জন্য তুমি এরে এর সেকেন্ড পজিশন এর উপাদান কে destructuring করে 'balance' নামক একটা ভেরিয়েবল এ রাখবে। */
 
 
 /* const studentDetails = {
@@ -82,3 +83,57 @@ console.log(plus2(5, 8)); */
     return sum[0] + sum[1];
 };
 console.log(numbers(20, 10)); */
+
+/* const studentDetails = {
+    name: 'Afif Hossain',
+    age: 20,
+    isCollgeStudents: true,
+    favSub: ['bangla', 'english', 'mathmatichs', 'horror fiction'],
+    income: 6000,
+    familyMembrJobs: {
+        father: 'Family header', mother: 'House-wife', sister: 'Studying'
+    },
+    incomeExpense: function (expense, income) {
+        this.income = this.income - expense + income
+        console.log(this)
+    },
+    seeFuntion: function () {
+        console.log(this.favSub.map(member => member))
+    }
+
+};
+
+const { name, income } = studentDetails;
+const [p, balance] = studentDetails.favSub
+console.log(name, balance); */
+// const [balance] = studentDetails.favSub;
+// console.log(balance)
+/* const studentDetails = {
+    name: 'Afif Hossain',
+    age: 20,
+    isCollegeStudent: true, // Corrected the spelling of 'College'
+    favSub: ['bangla', 'english', 'mathematics', 'horror fiction'], // Corrected spelling of 'mathematics'
+    income: 6000,
+    familyMemberJobs: {
+        father: 'Family head', // Corrected 'header' to 'head'
+        mother: 'House-wife',
+        sister: 'Studying'
+    },
+    incomeExpense: function (expense, income) {
+        this.income = this.income - expense + income;
+        console.log(this);
+    },
+    seeFunction: function () {
+        console.log(this.favSub.map(member => member));
+    }
+};
+
+const { name, income } = studentDetails;
+console.log(name, income);
+
+const [balance] = studentDetails.favSub; // Accessing the correct index
+console.log(balance);
+ */
+// const m = [2, 39, 0]
+// const [a, n] = [9, 3];
+// console.log(a, n,)
